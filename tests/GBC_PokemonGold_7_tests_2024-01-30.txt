@@ -1,0 +1,6470 @@
+
+    [TestMethod]
+    public async Task player_playerId()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.playerId", 0xD1A1, [185, 218], 47578);
+    }
+
+    [TestMethod]
+    public async Task player_name()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.name", 0xD1A3, [128, 128, 128, 128, 128, 128, 128, 80, 0, 0, 0], "AAAAAAA");
+    }
+
+    [TestMethod]
+    public async Task player_team_0_nickname()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.nickname", 0xDB8C, [148, 145, 146, 128, 145, 136, 141, 134, 80, 80, 80], "URSARING");
+    }
+
+    [TestMethod]
+    public async Task player_team_0_species()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.species", 0xDA2A, [217], "Ursaring");
+    }
+
+    [TestMethod]
+    public async Task player_team_0_pokedexNumber()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.pokedexNumber", 0xDA2A, [217], "217");
+    }
+
+    [TestMethod]
+    public async Task player_team_0_level()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.level", 0xDA49, [76], 76);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_expPoints()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.expPoints", 0xDA32, [6, 179, 158], 439198);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_friendship()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.friendship", 0xDA45, [255], 255);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_statusCondition()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.statusCondition", 0xDA4A, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.heldItem", 0xDA2B, [146], "Leftovers");
+    }
+
+    [TestMethod]
+    public async Task player_team_0_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.hp", 0xDA4C, [1, 1], 257);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.maxHp", 0xDA4E, [1, 1], 257);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.attack", 0xDA50, [0, 242], 242);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.defense", 0xDA52, [0, 150], 150);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.specialAttack", 0xDA56, [0, 170], 170);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.specialDefense", 0xDA58, [0, 170], 170);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.speed", 0xDA54, [0, 143], 143);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_dvAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.dvAttack", 0xDA3F, [32], 2);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_dvDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.dvDefense", 0xDA3F, [32], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_dvSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.dvSpeed", 0xDA40, [219], 13);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_dvSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.dvSpecial", 0xDA40, [219], 11);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.move1", 0xDA2C, [216], "Return");
+    }
+
+    [TestMethod]
+    public async Task player_team_0_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.move2", 0xDA2D, [214], "Sleep Talk");
+    }
+
+    [TestMethod]
+    public async Task player_team_0_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.move3", 0xDA2E, [182], "Protect");
+    }
+
+    [TestMethod]
+    public async Task player_team_0_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.move4", 0xDA2F, [156], "Rest");
+    }
+
+    [TestMethod]
+    public async Task player_team_0_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.move1pp", 0xDA41, [20], 20);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.move2pp", 0xDA42, [10], 10);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.move3pp", 0xDA43, [9], 9);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.move4pp", 0xDA44, [9], 9);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.move1ppUp", 0xDA41, [20], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.move2ppUp", 0xDA42, [10], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.move3ppUp", 0xDA43, [9], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.move4ppUp", 0xDA44, [9], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_statExpHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.statExpHp", 0xDA35, [95, 87], 24407);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_statExpAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.statExpAttack", 0xDA37, [150, 200], 38600);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_statExpDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.statExpDefense", 0xDA39, [105, 66], 26946);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_statExpSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.statExpSpeed", 0xDA3B, [131, 93], 33629);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_statExpSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.statExpSpecial", 0xDA3D, [134, 78], 34382);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_pokerus()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.pokerus", 0xDA46, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_0_trainerId()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.0.trainerId", 0xDA30, [185, 218], 47578);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_nickname()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.nickname", 0xDB97, [143, 128, 145, 128, 146, 80, 80, 80, 80, 80, 80], "PARAS");
+    }
+
+    [TestMethod]
+    public async Task player_team_1_species()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.species", 0xDA5A, [46], "Paras");
+    }
+
+    [TestMethod]
+    public async Task player_team_1_pokedexNumber()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.pokedexNumber", 0xDA5A, [46], "46");
+    }
+
+    [TestMethod]
+    public async Task player_team_1_level()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.level", 0xDA79, [6], 6);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_expPoints()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.expPoints", 0xDA62, [0, 0, 216], 216);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_friendship()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.friendship", 0xDA75, [141], 141);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_statusCondition()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.statusCondition", 0xDA7A, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.heldItem", 0xDA5B, [86], "TinyMushroom");
+    }
+
+    [TestMethod]
+    public async Task player_team_1_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.hp", 0xDA7C, [0, 20], 20);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.maxHp", 0xDA7E, [0, 20], 20);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.attack", 0xDA80, [0, 14], 14);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.defense", 0xDA82, [0, 13], 13);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.specialAttack", 0xDA86, [0, 11], 11);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.specialDefense", 0xDA88, [0, 13], 13);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.speed", 0xDA84, [0, 9], 9);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_dvAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.dvAttack", 0xDA6F, [173], 10);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_dvDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.dvDefense", 0xDA6F, [173], 13);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_dvSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.dvSpeed", 0xDA70, [156], 9);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_dvSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.dvSpecial", 0xDA70, [156], 12);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.move1", 0xDA5C, [10], "Scratch");
+    }
+
+    [TestMethod]
+    public async Task player_team_1_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.move2", 0xDA5D, [15], "Cut");
+    }
+
+    [TestMethod]
+    public async Task player_team_1_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.move3", 0xDA5E, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.move4", 0xDA5F, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.move1pp", 0xDA71, [35], 35);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.move2pp", 0xDA72, [30], 30);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.move3pp", 0xDA73, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.move4pp", 0xDA74, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.move1ppUp", 0xDA71, [35], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.move2ppUp", 0xDA72, [30], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.move3ppUp", 0xDA73, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.move4ppUp", 0xDA74, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_statExpHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.statExpHp", 0xDA65, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_statExpAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.statExpAttack", 0xDA67, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_statExpDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.statExpDefense", 0xDA69, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_statExpSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.statExpSpeed", 0xDA6B, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_statExpSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.statExpSpecial", 0xDA6D, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_pokerus()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.pokerus", 0xDA76, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_1_trainerId()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.1.trainerId", 0xDA60, [185, 218], 47578);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_nickname()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.nickname", 0xDBA2, [138, 132, 141, 152, 128, 80, 145, 128, 141, 131, 152], "KENYA");
+    }
+
+    [TestMethod]
+    public async Task player_team_2_species()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.species", 0xDA8A, [21], "Spearow");
+    }
+
+    [TestMethod]
+    public async Task player_team_2_pokedexNumber()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.pokedexNumber", 0xDA8A, [21], "21");
+    }
+
+    [TestMethod]
+    public async Task player_team_2_level()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.level", 0xDAA9, [10], 10);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_expPoints()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.expPoints", 0xDA92, [0, 3, 232], 1000);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_friendship()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.friendship", 0xDAA5, [140], 140);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_statusCondition()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.statusCondition", 0xDAAA, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.heldItem", 0xDA8B, [158], "Flower Mail");
+    }
+
+    [TestMethod]
+    public async Task player_team_2_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.hp", 0xDAAC, [0, 30], 30);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.maxHp", 0xDAAE, [0, 30], 30);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.attack", 0xDAB0, [0, 20], 20);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.defense", 0xDAB2, [0, 11], 11);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.specialAttack", 0xDAB6, [0, 11], 11);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.specialDefense", 0xDAB8, [0, 11], 11);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.speed", 0xDAB4, [0, 22], 22);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_dvAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.dvAttack", 0xDA9F, [242], 15);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_dvDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.dvDefense", 0xDA9F, [242], 2);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_dvSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.dvSpeed", 0xDAA0, [242], 15);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_dvSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.dvSpecial", 0xDAA0, [242], 2);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.move1", 0xDA8C, [64], "Peck");
+    }
+
+    [TestMethod]
+    public async Task player_team_2_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.move2", 0xDA8D, [45], "Growl");
+    }
+
+    [TestMethod]
+    public async Task player_team_2_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.move3", 0xDA8E, [43], "Leer");
+    }
+
+    [TestMethod]
+    public async Task player_team_2_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.move4", 0xDA8F, [19], "Fly");
+    }
+
+    [TestMethod]
+    public async Task player_team_2_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.move1pp", 0xDAA1, [35], 35);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.move2pp", 0xDAA2, [40], 40);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.move3pp", 0xDAA3, [30], 30);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.move4pp", 0xDAA4, [15], 15);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.move1ppUp", 0xDAA1, [35], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.move2ppUp", 0xDAA2, [40], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.move3ppUp", 0xDAA3, [30], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.move4ppUp", 0xDAA4, [15], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_statExpHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.statExpHp", 0xDA95, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_statExpAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.statExpAttack", 0xDA97, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_statExpDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.statExpDefense", 0xDA99, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_statExpSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.statExpSpeed", 0xDA9B, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_statExpSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.statExpSpecial", 0xDA9D, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_pokerus()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.pokerus", 0xDAA6, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_2_trainerId()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.2.trainerId", 0xDA90, [3, 233], 1001);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_nickname()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.nickname", 0xDBAD, [138, 145, 128, 129, 129, 152, 80, 80, 80, 80, 80], "KRABBY");
+    }
+
+    [TestMethod]
+    public async Task player_team_3_species()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.species", 0xDABA, [98], "Krabby");
+    }
+
+    [TestMethod]
+    public async Task player_team_3_pokedexNumber()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.pokedexNumber", 0xDABA, [98], "98");
+    }
+
+    [TestMethod]
+    public async Task player_team_3_level()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.level", 0xDAD9, [20], 20);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_expPoints()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.expPoints", 0xDAC2, [0, 31, 64], 8000);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_friendship()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.friendship", 0xDAD5, [136], 136);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_statusCondition()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.statusCondition", 0xDADA, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.heldItem", 0xDABB, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.hp", 0xDADC, [0, 47], 47);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.maxHp", 0xDADE, [0, 47], 47);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.attack", 0xDAE0, [0, 48], 48);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.defense", 0xDAE2, [0, 44], 44);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.specialAttack", 0xDAE6, [0, 20], 20);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.specialDefense", 0xDAE8, [0, 20], 20);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.speed", 0xDAE4, [0, 26], 26);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_dvAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.dvAttack", 0xDACF, [57], 3);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_dvDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.dvDefense", 0xDACF, [57], 9);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_dvSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.dvSpeed", 0xDAD0, [62], 3);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_dvSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.dvSpecial", 0xDAD0, [62], 14);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.move1", 0xDABC, [57], "Surf");
+    }
+
+    [TestMethod]
+    public async Task player_team_3_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.move2", 0xDABD, [70], "Strength");
+    }
+
+    [TestMethod]
+    public async Task player_team_3_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.move3", 0xDABE, [250], "Whirlpool");
+    }
+
+    [TestMethod]
+    public async Task player_team_3_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.move4", 0xDABF, [106], "Harden");
+    }
+
+    [TestMethod]
+    public async Task player_team_3_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.move1pp", 0xDAD1, [15], 15);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.move2pp", 0xDAD2, [15], 15);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.move3pp", 0xDAD3, [15], 15);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.move4pp", 0xDAD4, [30], 30);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.move1ppUp", 0xDAD1, [15], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.move2ppUp", 0xDAD2, [15], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.move3ppUp", 0xDAD3, [15], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.move4ppUp", 0xDAD4, [30], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_statExpHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.statExpHp", 0xDAC5, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_statExpAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.statExpAttack", 0xDAC7, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_statExpDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.statExpDefense", 0xDAC9, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_statExpSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.statExpSpeed", 0xDACB, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_statExpSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.statExpSpecial", 0xDACD, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_pokerus()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.pokerus", 0xDAD6, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_3_trainerId()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.3.trainerId", 0xDAC0, [185, 218], 47578);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_nickname()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.nickname", 0xDBB8, [134, 152, 128, 145, 128, 131, 142, 146, 80, 80, 80], "GYARADOS");
+    }
+
+    [TestMethod]
+    public async Task player_team_4_species()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.species", 0xDAEA, [130], "Gyarados");
+    }
+
+    [TestMethod]
+    public async Task player_team_4_pokedexNumber()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.pokedexNumber", 0xDAEA, [130], "130");
+    }
+
+    [TestMethod]
+    public async Task player_team_4_level()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.level", 0xDB09, [20], 20);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_expPoints()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.expPoints", 0xDAF2, [0, 39, 16], 10000);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_friendship()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.friendship", 0xDB05, [117], 117);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_statusCondition()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.statusCondition", 0xDB0A, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.heldItem", 0xDAEB, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.hp", 0xDB0C, [0, 70], 70);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.maxHp", 0xDB0E, [0, 70], 70);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.attack", 0xDB10, [0, 55], 55);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.defense", 0xDB12, [0, 42], 42);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.specialAttack", 0xDB16, [0, 35], 35);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.specialDefense", 0xDB18, [0, 51], 51);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.speed", 0xDB14, [0, 41], 41);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_dvAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.dvAttack", 0xDAFF, [47], 2);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_dvDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.dvDefense", 0xDAFF, [47], 15);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_dvSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.dvSpeed", 0xDB00, [159], 9);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_dvSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.dvSpecial", 0xDB00, [159], 15);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.move1", 0xDAEC, [37], "Thrash");
+    }
+
+    [TestMethod]
+    public async Task player_team_4_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.move2", 0xDAED, [44], "Bite");
+    }
+
+    [TestMethod]
+    public async Task player_team_4_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.move3", 0xDAEE, [127], "Waterfall");
+    }
+
+    [TestMethod]
+    public async Task player_team_4_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.move4", 0xDAEF, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.move1pp", 0xDB01, [20], 20);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.move2pp", 0xDB02, [25], 25);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.move3pp", 0xDB03, [15], 15);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.move4pp", 0xDB04, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.move1ppUp", 0xDB01, [20], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.move2ppUp", 0xDB02, [25], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.move3ppUp", 0xDB03, [15], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.move4ppUp", 0xDB04, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_statExpHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.statExpHp", 0xDAF5, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_statExpAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.statExpAttack", 0xDAF7, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_statExpDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.statExpDefense", 0xDAF9, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_statExpSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.statExpSpeed", 0xDAFB, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_statExpSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.statExpSpecial", 0xDAFD, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_pokerus()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.pokerus", 0xDB06, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_4_trainerId()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.4.trainerId", 0xDAF0, [185, 218], 47578);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_nickname()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.nickname", 0xDBC3, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "           ");
+    }
+
+    [TestMethod]
+    public async Task player_team_5_species()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.species", 0xDB1A, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_pokedexNumber()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.pokedexNumber", 0xDB1A, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_level()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.level", 0xDB39, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_expPoints()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.expPoints", 0xDB22, [0, 0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_friendship()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.friendship", 0xDB35, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_statusCondition()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.statusCondition", 0xDB3A, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.heldItem", 0xDB1B, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.hp", 0xDB3C, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.maxHp", 0xDB3E, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.attack", 0xDB40, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.defense", 0xDB42, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.specialAttack", 0xDB46, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.specialDefense", 0xDB48, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.speed", 0xDB44, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_dvAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.dvAttack", 0xDB2F, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_dvDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.dvDefense", 0xDB2F, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_dvSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.dvSpeed", 0xDB30, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_dvSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.dvSpecial", 0xDB30, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.move1", 0xDB1C, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.move2", 0xDB1D, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.move3", 0xDB1E, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.move4", 0xDB1F, [0], null);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.move1pp", 0xDB31, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.move2pp", 0xDB32, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.move3pp", 0xDB33, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.move4pp", 0xDB34, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.move1ppUp", 0xDB31, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.move2ppUp", 0xDB32, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.move3ppUp", 0xDB33, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.move4ppUp", 0xDB34, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_statExpHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.statExpHp", 0xDB25, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_statExpAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.statExpAttack", 0xDB27, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_statExpDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.statExpDefense", 0xDB29, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_statExpSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.statExpSpeed", 0xDB2B, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_statExpSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.statExpSpecial", 0xDB2D, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_pokerus()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.pokerus", 0xDB36, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_team_5_trainerId()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.team.5.trainerId", 0xDB20, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_totalKeyItems()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.totalKeyItems", 0xD5E1, [9], 9);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM01_DynamicPunch()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM01-DynamicPunch", 0xD859, [247], 247);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM02_Headbutt()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM02-Headbutt", 0xD85A, [190], 190);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM03_Curse()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM03-Curse", 0xD85B, [32], 32);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM04_Rollout()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM04-Rollout", 0xD85C, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM05_Roar()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM05-Roar", 0xD85D, [33], 33);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM06_Toxic()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM06-Toxic", 0xD85E, [245], 245);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM07_Zap_Cannon()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM07-Zap Cannon", 0xD85F, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM08_Rock_Smash()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM08-Rock Smash", 0xD860, [28], 28);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM09_Psych_Up()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM09-Psych Up", 0xD861, [7], 7);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM10_Hidden_Power()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM10-Hidden Power", 0xD862, [96], 96);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM11_Sunny_Day()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM11-Sunny Day", 0xD863, [40], 40);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM12_Sweet_Scent()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM12-Sweet Scent", 0xD864, [128], 128);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM13_Snore()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM13-Snore", 0xD865, [63], 63);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM14_Blizzard()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM14-Blizzard", 0xD866, [32], 32);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM15_Hyper_Beam()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM15-Hyper Beam", 0xD867, [4], 4);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM16_Icy_Wind()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM16-Icy Wind", 0xD868, [29], 29);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM17_Protect()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM17-Protect", 0xD869, [15], 15);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM18_Rain_Dance()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM18-Rain Dance", 0xD86A, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM19_Giga_Drain()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM19-Giga Drain", 0xD86B, [16], 16);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM20_Endure()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM20-Endure", 0xD86C, [31], 31);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM21_Frustration()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM21-Frustration", 0xD86D, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM22_SolarBeam()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM22-SolarBeam", 0xD86E, [31], 31);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM23_Iron_Tail()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM23-Iron Tail", 0xD86F, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM24_DragonBreath()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM24-DragonBreath", 0xD870, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM25_Thunder()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM25-Thunder", 0xD871, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM26_Earthquake()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM26-Earthquake", 0xD872, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM27_Return()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM27-Return", 0xD873, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM28_Dig()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM28-Dig", 0xD874, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM29_Psychic()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM29-Psychic", 0xD875, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM30_Shadow_Ball()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM30-Shadow Ball", 0xD876, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM31_Mud_Slap()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM31-Mud-Slap", 0xD877, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM32_Double_Team()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM32-Double Team", 0xD878, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM33_Ice_Punch()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM33-Ice Punch", 0xD879, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM34_Swagger()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM34-Swagger", 0xD87A, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM35_Sleep_Talk()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM35-Sleep Talk", 0xD87B, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM36_Sludge_Bomb()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM36-Sludge Bomb", 0xD87C, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM37_Sandstorm()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM37-Sandstorm", 0xD87D, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM38_Fire_Blast()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM38-Fire Blast", 0xD87E, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM39_Swift()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM39-Swift", 0xD87F, [22], 22);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM40_Defense_Curl()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM40-Defense Curl", 0xD880, [136], 136);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM41_ThunderPunch()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM41-ThunderPunch", 0xD881, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM42_Dream_Eater()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM42-Dream Eater", 0xD882, [82], 82);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM43_Detect()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM43-Detect", 0xD883, [52], 52);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM44_Rest()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM44-Rest", 0xD884, [132], 132);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM45_Attract()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM45-Attract", 0xD885, [4], 4);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM46_Thief()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM46-Thief", 0xD886, [6], 6);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM47_Steel_Wing()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM47-Steel Wing", 0xD887, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM48_Fire_Punch()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM48-Fire Punch", 0xD888, [41], 41);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM49_Fury_Cutter()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM49-Fury Cutter", 0xD889, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_tms_TM50_Nightmare()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.tms.TM50-Nightmare", 0xD88A, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_hms_HM01_Cut()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.hms.HM01-Cut", 0xD88B, [8], false);
+    }
+
+    [TestMethod]
+    public async Task player_hms_HM02_Fly()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.hms.HM02-Fly", 0xD88C, [209], false);
+    }
+
+    [TestMethod]
+    public async Task player_hms_HM03_Surf()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.hms.HM03-Surf", 0xD88D, [34], true);
+    }
+
+    [TestMethod]
+    public async Task player_hms_HM04_Strength()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.hms.HM04-Strength", 0xD88E, [224], false);
+    }
+
+    [TestMethod]
+    public async Task player_hms_HM05_Flash()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.hms.HM05-Flash", 0xD88F, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_hms_HM06_Whirlpool()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.hms.HM06-Whirlpool", 0xD890, [122], true);
+    }
+
+    [TestMethod]
+    public async Task player_hms_HM07_Waterfall()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.hms.HM07-Waterfall", 0xD891, [246], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge1", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge2", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge3", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge4", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge5()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge5", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge6()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge6", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge7()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge7", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge8()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge8", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge9()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge9", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge10()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge10", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge11()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge11", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge12()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge12", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge13()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge13", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge14()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge14", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge15()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge15", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_badges_badge16()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.badges.badge16", 0xD57C, [255], true);
+    }
+
+    [TestMethod]
+    public async Task player_money()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.money", 0xD573, [1, 79, 215], 85975);
+    }
+
+    [TestMethod]
+    public async Task player_moneyMom()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.moneyMom", 0xD576, [0, 0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_coins()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.coins", 0xD57A, [0, 100], 100);
+    }
+
+    [TestMethod]
+    public async Task player_repelStepsLeft()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.repelStepsLeft", 0xD9EB, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task player_bikeStatus()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("player.bikeStatus", 0xD682, [1], "Biking");
+    }
+
+    [TestMethod]
+    public async Task overworld_mapGroup()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("overworld.mapGroup", 0xDA00, [19], "SILVER");
+    }
+
+    [TestMethod]
+    public async Task overworld_mapNumber()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("overworld.mapNumber", 0xDA01, [2], 2);
+    }
+
+    [TestMethod]
+    public async Task battle_mode()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.mode", 0xD116, [1], "Wild");
+    }
+
+    [TestMethod]
+    public async Task battle_battleStart()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.battleStart", 0xC664, [122], 122);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_nickname()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.nickname", 0xDEBF, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "           ");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_species()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.species", 0xDD5D, [25], "Pikachu");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_pokedexNumber()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.pokedexNumber", 0xDD5D, [25], "25");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_level()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.level", 0xDD7C, [81], 81);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_expPoints()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.expPoints", 0xDD65, [8, 27, 241], 531441);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_friendship()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.friendship", 0xDD78, [70], 70);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_statusCondition()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.statusCondition", 0xDD7D, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.heldItem", 0xDD5E, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.hp", 0xDD7F, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.maxHp", 0xDD81, [0, 170], 170);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.attack", 0xDD83, [0, 118], 118);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.defense", 0xDD85, [0, 74], 74);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.specialAttack", 0xDD89, [0, 108], 108);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.specialDefense", 0xDD8B, [0, 92], 92);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.speed", 0xDD87, [0, 171], 171);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_dvAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.dvAttack", 0xDD72, [253], 15);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_dvDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.dvDefense", 0xDD72, [253], 13);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_dvSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.dvSpeed", 0xDD73, [222], 13);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_dvSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.dvSpecial", 0xDD73, [222], 14);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.move1", 0xDD5F, [204], "Charm");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.move2", 0xDD60, [98], "Quick Attack");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.move3", 0xDD61, [85], "Thunderbolt");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.move4", 0xDD62, [87], "Thunder");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.move1pp", 0xDD74, [19], 19);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.move2pp", 0xDD75, [30], 30);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.move3pp", 0xDD76, [15], 15);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.move4pp", 0xDD77, [9], 9);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.move1ppUp", 0xDD74, [19], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.move2ppUp", 0xDD75, [30], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.move3ppUp", 0xDD76, [15], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.move4ppUp", 0xDD77, [9], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_statExpHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.statExpHp", 0xDD68, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_statExpAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.statExpAttack", 0xDD6A, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_statExpDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.statExpDefense", 0xDD6C, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_statExpSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.statExpSpeed", 0xDD6E, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_statExpSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.statExpSpecial", 0xDD70, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_pokerus()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.pokerus", 0xDD79, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_0_trainerId()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.0.trainerId", 0xDD63, [185, 218], 47578);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_nickname()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.nickname", 0xDECA, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "           ");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_species()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.species", 0xDD8D, [196], "Espeon");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_pokedexNumber()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.pokedexNumber", 0xDD8D, [196], "196");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_level()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.level", 0xDDAC, [73], 73);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_expPoints()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.expPoints", 0xDD95, [5, 239, 153], 389017);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_friendship()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.friendship", 0xDDA8, [70], 70);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_statusCondition()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.statusCondition", 0xDDAD, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.heldItem", 0xDD8E, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.hp", 0xDDAF, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.maxHp", 0xDDB1, [0, 198], 198);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.attack", 0xDDB3, [0, 121], 121);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.defense", 0xDDB5, [0, 111], 111);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.specialAttack", 0xDDB9, [0, 215], 215);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.specialDefense", 0xDDBB, [0, 164], 164);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.speed", 0xDDB7, [0, 184], 184);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_dvAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.dvAttack", 0xDDA2, [253], 15);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_dvDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.dvDefense", 0xDDA2, [253], 13);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_dvSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.dvSpeed", 0xDDA3, [222], 13);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_dvSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.dvSpecial", 0xDDA3, [222], 14);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.move1", 0xDD8F, [189], "Mud-Slap");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.move2", 0xDD90, [115], "Reflect");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.move3", 0xDD91, [129], "Swift");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.move4", 0xDD92, [94], "Psychic");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.move1pp", 0xDDA4, [10], 10);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.move2pp", 0xDDA5, [20], 20);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.move3pp", 0xDDA6, [20], 20);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.move4pp", 0xDDA7, [9], 9);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.move1ppUp", 0xDDA4, [10], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.move2ppUp", 0xDDA5, [20], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.move3ppUp", 0xDDA6, [20], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.move4ppUp", 0xDDA7, [9], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_statExpHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.statExpHp", 0xDD98, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_statExpAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.statExpAttack", 0xDD9A, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_statExpDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.statExpDefense", 0xDD9C, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_statExpSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.statExpSpeed", 0xDD9E, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_statExpSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.statExpSpecial", 0xDDA0, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_pokerus()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.pokerus", 0xDDA9, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_1_trainerId()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.1.trainerId", 0xDD93, [185, 218], 47578);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_nickname()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.nickname", 0xDED5, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "           ");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_species()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.species", 0xDDBD, [143], "Snorlax");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_pokedexNumber()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.pokedexNumber", 0xDDBD, [143], "143");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_level()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.level", 0xDDDC, [75], 75);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_expPoints()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.expPoints", 0xDDC5, [8, 11, 239], 527343);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_friendship()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.friendship", 0xDDD8, [70], 70);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_statusCondition()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.statusCondition", 0xDDDD, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.heldItem", 0xDDBE, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.hp", 0xDDDF, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.maxHp", 0xDDE1, [1, 90], 346);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.attack", 0xDDE3, [0, 192], 192);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.defense", 0xDDE5, [0, 122], 122);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.specialAttack", 0xDDE9, [0, 123], 123);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.specialDefense", 0xDDEB, [0, 191], 191);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.speed", 0xDDE7, [0, 69], 69);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_dvAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.dvAttack", 0xDDD2, [253], 15);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_dvDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.dvDefense", 0xDDD2, [253], 13);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_dvSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.dvSpeed", 0xDDD3, [222], 13);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_dvSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.dvSpecial", 0xDDD3, [222], 14);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.move1", 0xDDBF, [133], "Amnesia");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.move2", 0xDDC0, [173], "Snore");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.move3", 0xDDC1, [156], "Rest");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.move4", 0xDDC2, [34], "Body Slam");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.move1pp", 0xDDD4, [20], 20);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.move2pp", 0xDDD5, [15], 15);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.move3pp", 0xDDD6, [10], 10);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.move4pp", 0xDDD7, [12], 12);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.move1ppUp", 0xDDD4, [20], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.move2ppUp", 0xDDD5, [15], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.move3ppUp", 0xDDD6, [10], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.move4ppUp", 0xDDD7, [12], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_statExpHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.statExpHp", 0xDDC8, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_statExpAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.statExpAttack", 0xDDCA, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_statExpDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.statExpDefense", 0xDDCC, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_statExpSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.statExpSpeed", 0xDDCE, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_statExpSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.statExpSpecial", 0xDDD0, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_pokerus()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.pokerus", 0xDDD9, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_2_trainerId()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.2.trainerId", 0xDDC3, [185, 218], 47578);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_nickname()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.nickname", 0xDEE0, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "           ");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_species()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.species", 0xDDED, [3], "Venusaur");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_pokedexNumber()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.pokedexNumber", 0xDDED, [3], "3");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_level()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.level", 0xDE0C, [77], 77);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_expPoints()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.expPoints", 0xDDF5, [7, 30, 32], 466464);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_friendship()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.friendship", 0xDE08, [70], 70);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_statusCondition()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.statusCondition", 0xDE0D, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.heldItem", 0xDDEE, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.hp", 0xDE0F, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.maxHp", 0xDE11, [0, 231], 231);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.attack", 0xDE13, [0, 154], 154);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.defense", 0xDE15, [0, 152], 152);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.specialAttack", 0xDE19, [0, 180], 180);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.specialDefense", 0xDE1B, [0, 180], 180);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.speed", 0xDE17, [0, 148], 148);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_dvAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.dvAttack", 0xDE02, [253], 15);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_dvDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.dvDefense", 0xDE02, [253], 13);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_dvSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.dvSpeed", 0xDE03, [222], 13);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_dvSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.dvSpecial", 0xDE03, [222], 14);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.move1", 0xDDEF, [241], "Sunny Day");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.move2", 0xDDF0, [202], "Giga Drain");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.move3", 0xDDF1, [235], "Synthesis");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.move4", 0xDDF2, [76], "SolarBeam");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.move1pp", 0xDE04, [5], 5);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.move2pp", 0xDE05, [5], 5);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.move3pp", 0xDE06, [5], 5);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.move4pp", 0xDE07, [9], 9);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.move1ppUp", 0xDE04, [5], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.move2ppUp", 0xDE05, [5], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.move3ppUp", 0xDE06, [5], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.move4ppUp", 0xDE07, [9], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_statExpHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.statExpHp", 0xDDF8, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_statExpAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.statExpAttack", 0xDDFA, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_statExpDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.statExpDefense", 0xDDFC, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_statExpSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.statExpSpeed", 0xDDFE, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_statExpSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.statExpSpecial", 0xDE00, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_pokerus()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.pokerus", 0xDE09, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_3_trainerId()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.3.trainerId", 0xDDF3, [185, 218], 47578);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_nickname()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.nickname", 0xDEEB, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "           ");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_species()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.species", 0xDE1D, [6], "Charizard");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_pokedexNumber()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.pokedexNumber", 0xDE1D, [6], "6");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_level()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.level", 0xDE3C, [77], 77);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_expPoints()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.expPoints", 0xDE25, [7, 30, 32], 466464);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_friendship()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.friendship", 0xDE38, [70], 70);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_statusCondition()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.statusCondition", 0xDE3D, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.heldItem", 0xDE1E, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.hp", 0xDE3F, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.maxHp", 0xDE41, [0, 228], 228);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.attack", 0xDE43, [0, 157], 157);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.defense", 0xDE45, [0, 145], 145);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.specialAttack", 0xDE49, [0, 194], 194);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.specialDefense", 0xDE4B, [0, 157], 157);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.speed", 0xDE47, [0, 179], 179);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_dvAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.dvAttack", 0xDE32, [253], 15);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_dvDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.dvDefense", 0xDE32, [253], 13);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_dvSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.dvSpeed", 0xDE33, [222], 13);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_dvSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.dvSpecial", 0xDE33, [222], 14);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.move1", 0xDE1F, [53], "Flamethrower");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.move2", 0xDE20, [17], "Wing Attack");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.move3", 0xDE21, [163], "Slash");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.move4", 0xDE22, [83], "Fire Spin");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.move1pp", 0xDE34, [11], 11);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.move2pp", 0xDE35, [35], 35);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.move3pp", 0xDE36, [20], 20);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.move4pp", 0xDE37, [15], 15);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.move1ppUp", 0xDE34, [11], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.move2ppUp", 0xDE35, [35], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.move3ppUp", 0xDE36, [20], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.move4ppUp", 0xDE37, [15], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_statExpHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.statExpHp", 0xDE28, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_statExpAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.statExpAttack", 0xDE2A, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_statExpDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.statExpDefense", 0xDE2C, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_statExpSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.statExpSpeed", 0xDE2E, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_statExpSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.statExpSpecial", 0xDE30, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_pokerus()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.pokerus", 0xDE39, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_4_trainerId()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.4.trainerId", 0xDE23, [185, 218], 47578);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_nickname()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.nickname", 0xDEF6, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "           ");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_species()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.species", 0xDE4D, [9], "Blastoise");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_pokedexNumber()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.pokedexNumber", 0xDE4D, [9], "9");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_level()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.level", 0xDE6C, [77], 77);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_expPoints()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.expPoints", 0xDE55, [7, 30, 32], 466464);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_friendship()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.friendship", 0xDE68, [70], 70);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_statusCondition()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.statusCondition", 0xDE6D, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.heldItem", 0xDE4E, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.hp", 0xDE6F, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.maxHp", 0xDE71, [0, 230], 230);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.attack", 0xDE73, [0, 155], 155);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.defense", 0xDE75, [0, 179], 179);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.specialAttack", 0xDE79, [0, 157], 157);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.specialDefense", 0xDE7B, [0, 188], 188);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.speed", 0xDE77, [0, 145], 145);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_dvAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.dvAttack", 0xDE62, [253], 15);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_dvDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.dvDefense", 0xDE62, [253], 13);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_dvSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.dvSpeed", 0xDE63, [222], 13);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_dvSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.dvSpecial", 0xDE63, [222], 14);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.move1", 0xDE4F, [240], "Rain Dance");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.move2", 0xDE50, [57], "Surf");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.move3", 0xDE51, [59], "Blizzard");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.move4", 0xDE52, [250], "Whirlpool");
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.move1pp", 0xDE64, [4], 4);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.move2pp", 0xDE65, [7], 7);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.move3pp", 0xDE66, [5], 5);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.move4pp", 0xDE67, [15], 15);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.move1ppUp", 0xDE64, [4], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.move2ppUp", 0xDE65, [7], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.move3ppUp", 0xDE66, [5], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.move4ppUp", 0xDE67, [15], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_statExpHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.statExpHp", 0xDE58, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_statExpAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.statExpAttack", 0xDE5A, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_statExpDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.statExpDefense", 0xDE5C, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_statExpSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.statExpSpeed", 0xDE5E, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_statExpSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.statExpSpecial", 0xDE60, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_pokerus()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.pokerus", 0xDE69, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_trainer_team_5_trainerId()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.trainer.team.5.trainerId", 0xDE53, [185, 218], 47578);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_partyPos()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.partyPos", 0xCFC6, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.heldItem", 0xCB0D, [146], "Leftovers");
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_type1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.type1", 0xCB2A, [0], "Normal");
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_type2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.type2", 0xCB2B, [0], "Normal");
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_modStageAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.modStageAttack", 0xC6CC, [44], null);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_modStageDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.modStageDefense", 0xC6CD, [44], null);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_modStageSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.modStageSpeed", 0xC6CE, [44], null);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_modStageSpecialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.modStageSpecialAttack", 0xC6CF, [44], null);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_modStageSpecialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.modStageSpecialDefense", 0xC6D0, [80], null);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_modStageAccuracy()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.modStageAccuracy", 0xC6D1, [81], null);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_modStageEvasion()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.modStageEvasion", 0xC6D2, [80], null);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.hp", 0xCB1C, [1, 1], 257);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.maxHp", 0xCBBF, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.attack", 0xCBC1, [156, 23], 39959);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.defense", 0xCBC3, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.speed", 0xCBC5, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.specialAttack", 0xCBC7, [1, 0], 256);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.specialDefense", 0xCBC9, [104, 0], 26624);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_battleStatAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.battleStatAttack", 0xCBC1, [156, 23], 39959);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_battleStatDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.battleStatDefense", 0xCBC3, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_battleStatSpecialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.battleStatSpecialAttack", 0xCBC7, [1, 0], 256);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_battleStatSpecialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.battleStatSpecialDefense", 0xCBC9, [104, 0], 26624);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_battleStatSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.battleStatSpeed", 0xCBC5, [0, 0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.move1", 0xCB0E, [216], "Return");
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.move2", 0xCB0F, [214], "Sleep Talk");
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.move3", 0xCB10, [182], "Protect");
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.move4", 0xCB11, [156], "Rest");
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.move1pp", 0xCB14, [20], 20);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.move2pp", 0xCB15, [10], 10);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.move3pp", 0xCB16, [9], 9);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.move4pp", 0xCB17, [9], 9);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.move1ppUp", 0xCB14, [20], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.move2ppUp", 0xCB15, [10], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.move3ppUp", 0xCB16, [9], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_yourPokemon_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.yourPokemon.move4ppUp", 0xCB17, [9], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_partyPos()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.partyPos", 0xCB41, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_heldItem()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.heldItem", 0xD0F0, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_level()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.level", 0xD0FC, [42], 42);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_statsCondition()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.statsCondition", 0xD9FD, [0], null);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_move1()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.move1", 0xD0F1, [52], "Ember");
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_move2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.move2", 0xD0F2, [23], "Stomp");
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_move3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.move3", 0xD0F3, [83], "Fire Spin");
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_move4()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.move4", 0xD0F4, [36], "Take Down");
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_move1pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.move1pp", 0xD0F7, [25], 25);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_move2pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.move2pp", 0xD0F8, [19], 19);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_move3pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.move3pp", 0xD0F9, [14], 14);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_move4pp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.move4pp", 0xD0FA, [20], 20);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_move1ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.move1ppUp", 0xD0F7, [25], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_move2ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.move2ppUp", 0xD0F8, [19], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_move3ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.move3ppUp", 0xD0F9, [14], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_move4ppUp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.move4ppUp", 0xD0FA, [20], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_maxHp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.maxHp", 0xD101, [0, 104], 104);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_hp()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.hp", 0xD0FF, [0, 104], 104);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_attack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.attack", 0xD103, [0, 82], 82);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_defense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.defense", 0xD105, [0, 58], 58);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_speed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.speed", 0xD107, [0, 90], 90);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_specialAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.specialAttack", 0xD109, [0, 59], 59);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_specialDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.specialDefense", 0xD10B, [0, 59], 59);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_dvAttack()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.dvAttack", 0xD0F5, [121], 7);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_dvDefense()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.dvDefense", 0xD0F5, [121], 9);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_dvSpeed()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.dvSpeed", 0xD0F6, [192], 12);
+    }
+
+    [TestMethod]
+    public async Task battle_enemyPokemon_dvSpecial()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.enemyPokemon.dvSpecial", 0xD0F6, [192], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_info_miss()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.info.miss", 0xCB45, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_info_turnEnded()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.info.turnEnded", 0xCB92, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_info_playerTurnTaken()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.info.playerTurnTaken", 0xCBBB, [2], 2);
+    }
+
+    [TestMethod]
+    public async Task battle_info_enemyTurnTaken()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.info.enemyTurnTaken", 0xCBBA, [2], 2);
+    }
+
+    [TestMethod]
+    public async Task battle_field_playerScreens_statusSafeguard()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.field.playerScreens.statusSafeguard", 0xCBDD, [0], false);
+    }
+
+    [TestMethod]
+    public async Task battle_field_playerScreens_statusReflect()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.field.playerScreens.statusReflect", 0xCBDD, [0], false);
+    }
+
+    [TestMethod]
+    public async Task battle_field_playerScreens_statusLightScreen()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.field.playerScreens.statusLightScreen", 0xCBDD, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_field_playerScreens_safeguardCount()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.field.playerScreens.safeguardCount", 0xCBDF, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_field_playerScreens_lightScreenCount()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.field.playerScreens.lightScreenCount", 0xCBE0, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_field_playerScreens_reflectCount()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.field.playerScreens.reflectCount", 0xCBE1, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_field_enemyScreens_statusSafeguard()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.field.enemyScreens.statusSafeguard", 0xCBDE, [0], false);
+    }
+
+    [TestMethod]
+    public async Task battle_field_enemyScreens_statusReflect()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.field.enemyScreens.statusReflect", 0xCBDE, [0], false);
+    }
+
+    [TestMethod]
+    public async Task battle_field_enemyScreens_statusLightScreen()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.field.enemyScreens.statusLightScreen", 0xCBDE, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_field_enemyScreens_safeguardCount()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.field.enemyScreens.safeguardCount", 0xCBE3, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_field_enemyScreens_lightScreenCount()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.field.enemyScreens.lightScreenCount", 0xCBE4, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task battle_field_enemyScreens_reflectCount()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("battle.field.enemyScreens.reflectCount", 0xCBE5, [0], 0);
+    }
+
+    [TestMethod]
+    public async Task options_textSpeed2()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("options.textSpeed2", 0xD199, [193], false);
+    }
+
+    [TestMethod]
+    public async Task options_textSpeed3()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("options.textSpeed3", 0xD199, [193], false);
+    }
+
+    [TestMethod]
+    public async Task options_sound()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("options.sound", 0xD199, [193], false);
+    }
+
+    [TestMethod]
+    public async Task options_battleStyle()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("options.battleStyle", 0xD199, [193], true);
+    }
+
+    [TestMethod]
+    public async Task options_battleAnimations()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("options.battleAnimations", 0xD199, [193], true);
+    }
+
+    [TestMethod]
+    public async Task rival_rivalName()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("rival.rivalName", 0xD1BC, [80, 80, 80, 80, 80, 134, 145, 132, 145, 132, 131], "");
+    }
+
+    [TestMethod]
+    public async Task gameTime_hours()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("gameTime.hours", 0xD1EB, [0, 7], 7);
+    }
+
+    [TestMethod]
+    public async Task gameTime_minutes()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("gameTime.minutes", 0xD1ED, [6], 6);
+    }
+
+    [TestMethod]
+    public async Task gameTime_seconds()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("gameTime.seconds", 0xD1EE, [27], 27);
+    }
+
+    [TestMethod]
+    public async Task gameTime_frames()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("gameTime.frames", 0xD1EF, [33], 33);
+    }
+
+    [TestMethod]
+    public async Task time_current_day()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.current.day", 0xD1F2, [12], "Friday");
+    }
+
+    [TestMethod]
+    public async Task time_current_hour()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.current.hour", 0xFF96, [14], 14);
+    }
+
+    [TestMethod]
+    public async Task time_current_minute()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.current.minute", 0xFF98, [20], 20);
+    }
+
+    [TestMethod]
+    public async Task time_current_second()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.current.second", 0xFF9A, [21], 21);
+    }
+
+    [TestMethod]
+    public async Task time_current_dst()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.current.dst", 0xD1E8, [128], true);
+    }
+
+    [TestMethod]
+    public async Task time_current_timeOfDay()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.current.timeOfDay", 0xD157, [1], "Day");
+    }
+
+    [TestMethod]
+    public async Task time_start_day()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.start.day", 0xD1DC, [0], "Sunday");
+    }
+
+    [TestMethod]
+    public async Task time_start_hour()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.start.hour", 0xD1DD, [9], 9);
+    }
+
+    [TestMethod]
+    public async Task time_start_minute()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.start.minute", 0xD1DE, [59], 59);
+    }
+
+    [TestMethod]
+    public async Task time_start_second()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.start.second", 0xD1DF, [18], 18);
+    }
+
+    [TestMethod]
+    public async Task time_rtc_day()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.rtc.day", 0xFF8F, [0, 12], 5);
+    }
+
+    [TestMethod]
+    public async Task time_rtc_hour()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.rtc.hour", 0xFF91, [4], 4);
+    }
+
+    [TestMethod]
+    public async Task time_rtc_minute()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.rtc.minute", 0xFF92, [21], 21);
+    }
+
+    [TestMethod]
+    public async Task time_rtc_second()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("time.rtc.second", 0xFF93, [3], 3);
+    }
+
+    [TestMethod]
+    public async Task meta_generation()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("meta.generation", "2");
+    }
+
+    [TestMethod]
+    public async Task meta_gameName()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("meta.gameName", "Gold and Silver");
+    }
+
+    [TestMethod]
+    public async Task meta_gameType()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("meta.gameType", "Originals");
+    }
+
+    [TestMethod]
+    public async Task meta_mapperType()
+    {
+        await Load_GBC_PokemonGold(7);
+
+        var mapper = await GameHookClient.GetMapperAsync();
+    
+        mapper.AssertAreEqual("meta.mapperType", "Deprecated");
+    }
